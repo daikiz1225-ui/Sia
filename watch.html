@@ -1,0 +1,9 @@
+<script>
+  // URLの ?v= 以降を読み取って、さっきの画像（IMG_0796）の解析サイトへ飛ばす等の処理
+  const urlParams = new URLSearchParams(window.location.search);
+  const videoId = urlParams.get('v');
+  if (videoId) {
+    // 解析サイトなどへ自動で繋ぐロジック
+    window.location.href = 'https://y2mate.com/youtube/' + videoId; 
+  }
+</script>
